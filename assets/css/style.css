@@ -1,0 +1,125 @@
+/* Normalize CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* Normalize CSS End */
+.landing-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+        url("../img/hero.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+
+.landing-page-logo-section {
+    grid-column: 2/4;
+    grid-row: 2/6;
+    text-align: center;
+}
+
+.landing-page-logo {
+    width: 95%;
+}
+
+.landing-page-navigation-container {
+    grid-column: 9/19;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.landing-page-navigations {
+    padding-bottom: 0.4rem;
+}
+
+.landing-page-navigation-links {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.landing-page-hamburger-icon {
+    display: none;
+}
+
+.landing-page-hero-section {
+    grid-column: 1/21;
+    grid-row: 8/17;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.landing-page-hero-text-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+}
+
+.landing-page-hero-text {
+    width: 100%;
+    font-size: 3.75rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 135%;
+    letter-spacing: 0.02rem;
+    word-spacing: 0.08rem;
+}
+
+.landing-page-hero-buttons-container {
+    width: 35%;
+    margin-left: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing-page-hero-button-1,
+.landing-page-hero-button-2 {
+    text-decoration: none;
+    margin-bottom: 1.2rem;
+    border: solid #e67e22 1px;
+    padding: 0.4rem 1.5rem;
+    font-size: 1.75rem;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.landing-page-hero-button-1 {
+    background-color: #e67e22;
+}
+
+.landing-page-hero-button-2 {
+    background-color: #49280b62;
+}
